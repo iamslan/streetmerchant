@@ -140,6 +140,12 @@ import {WellsTechnology} from './wellstechnology';
 import {Wipoid} from './wipoid';
 import {Xbox} from './xbox';
 import {Zotac} from './zotac';
+import {CulturaFR} from './cultura-fr';
+import {BoulangerFR} from './boulanger-fr';
+import {CdiscountFR} from './cdiscount-fr';
+import {FnacFR} from './fnac-fr';
+import {AuchanFR} from './auchan-fr';
+import {MicromaniaFR} from './micromania-fr';
 import {logger} from '../../logger';
 
 export const storeList = new Map([
@@ -283,6 +289,12 @@ export const storeList = new Map([
   [Wipoid.name, Wipoid],
   [Xbox.name, Xbox],
   [Zotac.name, Zotac],
+  [CulturaFR.name, CulturaFR],
+  [BoulangerFR.name, BoulangerFR],
+  [CdiscountFR.name, CdiscountFR],
+  [FnacFR.name, FnacFR],
+  [AuchanFR.name, AuchanFR],
+  [MicromaniaFR.name, MicromaniaFR]
 ]);
 
 const brands = new Set();
