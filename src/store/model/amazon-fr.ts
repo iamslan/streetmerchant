@@ -188,6 +188,12 @@ export const AmazonFr: Store = {
     },
     {
       brand: 'microsoft',
+      labels: {
+        inStock: {
+          container: '#variation_edition .selection',
+          text: ['Xbox Series X']
+        }
+      },
       model: 'xbox series x',
       series: 'xboxsx',
       url: 'https://www.amazon.fr/dp/B08H93ZRLL',
