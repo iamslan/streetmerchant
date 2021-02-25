@@ -2,6 +2,7 @@ import {Link, Store} from './store/model';
 import chalk from 'chalk';
 import {config} from './config';
 import winston from 'winston';
+import {wsNotify} from './ws'
 
 const prettyJson = winston.format.printf(info => {
   const timestamp = new Date().toLocaleTimeString();
@@ -57,6 +58,7 @@ export const Print = {
     statusCode: number,
     color?: boolean
   ): string {
+    wsNotify(store, link, 'badstatus');
     if (color) {
       return (
         '✖ ' +
@@ -84,6 +86,7 @@ export const Print = {
     return `✖ ${buildProductString(link, store)} :: BANNED SELLER`;
   },
   captcha(link: Link, store: Store, color?: boolean): string {
+    wsNotify(store, link, 'captcha');
     if (color) {
       return (
         '✖ ' +
@@ -108,6 +111,7 @@ export const Print = {
     return `✖ ${buildProductString(link, store)} :: CLOUDFLARE, WAITING`;
   },
   inStock(link: Link, store: Store, color?: boolean, sms?: boolean): string {
+    wsNotify(store, link, 'instock');
     const productString = `${buildProductString(link, store)} :: IN STOCK`;
 
     if (color) {
@@ -181,6 +185,7 @@ export const Print = {
     return `✖ ${buildProductString(link, store)} :: NO RESPONSE`;
   },
   outOfStock(link: Link, store: Store, color?: boolean): string {
+    wsNotify(store, link, 'outofstock');
     if (color) {
       return (
         '✖ ' +

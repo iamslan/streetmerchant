@@ -24,6 +24,7 @@ import open from 'open';
 import {processBackoffDelay} from './model/helpers/backoff';
 import {sendNotification} from '../notification';
 import useProxy from '@doridian/puppeteer-page-proxy';
+import {wsNotify} from '../ws'
 
 const inStock: Record<string, boolean> = {};
 
@@ -175,6 +176,8 @@ async function lookup(browser: Browser, store: Store) {
     if (!filterStoreLink(link)) {
       continue;
     }
+
+    wsNotify(store, link, 'fetch');
 
     if (config.page.inStockWaitTime && inStock[link.url]) {
       logger.info(Print.inStockWaiting(link, store, true));
