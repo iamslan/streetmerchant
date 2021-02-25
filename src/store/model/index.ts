@@ -146,7 +146,6 @@ import {CdiscountFR} from './cdiscount-fr';
 import {FnacFR} from './fnac-fr';
 import {AuchanFR} from './auchan-fr';
 import {MicromaniaFR} from './micromania-fr';
-import {CarrefourFR} from './carrefour-fr';
 import {logger} from '../../logger';
 
 export const storeList = new Map([
@@ -295,8 +294,7 @@ export const storeList = new Map([
   [CdiscountFR.name, CdiscountFR],
   [FnacFR.name, FnacFR],
   [AuchanFR.name, AuchanFR],
-  [MicromaniaFR.name, MicromaniaFR],
-  [CarrefourFR.name, CarrefourFR]
+  [MicromaniaFR.name, MicromaniaFR]
 ]);
 
 const brands = new Set();
