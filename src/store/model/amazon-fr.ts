@@ -172,7 +172,7 @@ export const AmazonFr: Store = {
       },
       model: 'ps5 console',
       series: 'sonyps5c',
-      url: 'https://www.amazon.fr/dp/B08H93ZRK9',
+      url: 'https://www.amazon.fr/PlayStation-Édition-Standard-DualSense-Couleur/dp/B08H93ZRK9/',
     },
     {
       brand: 'sony',
@@ -184,7 +184,7 @@ export const AmazonFr: Store = {
       },
       model: 'ps5 digital',
       series: 'sonyps5de',
-      url: 'https://www.amazon.fr/dp/B08H98GVK8',
+      url: 'https://www.amazon.fr/PlayStation-Digital-Manette-DualSense-Couleur/dp/B08H98GVK8/',
     },
     {
       brand: 'microsoft',

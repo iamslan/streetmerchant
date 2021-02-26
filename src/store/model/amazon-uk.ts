@@ -37,6 +37,12 @@ export const AmazonUk: Store = {
     },
     {
       brand: 'sony',
+      labels: {
+        inStock: {
+          container: '#variation_edition .selection',
+          text: ['Console']
+        }
+      },
       cartUrl:
         'https://www.amazon.co.uk/gp/aws/cart/add.html?ASIN.1=B08H95Y452&Quantity.1=1',
       model: 'ps5 console',
@@ -45,6 +51,12 @@ export const AmazonUk: Store = {
     },
     {
       brand: 'sony',
+      labels: {
+        inStock: {
+          container: '#variation_edition .selection',
+          text: ['Digital Edition Console']
+        }
+      },
       cartUrl:
         'https://www.amazon.co.uk/gp/aws/cart/add.html?ASIN.1=B08H97NYGP&Quantity.1=1',
       model: 'ps5 digital',
