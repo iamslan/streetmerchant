@@ -65,6 +65,12 @@ export const AmazonUk: Store = {
     },
     {
       brand: 'microsoft',
+      labels: {
+        inStock: {
+          container: '#variation_edition .selection',
+          text: ['Xbox Series X']
+        }
+      },
       cartUrl:
         'https://www.amazon.co.uk/gp/aws/cart/add.html?ASIN.1=B08H93GKNJ&Quantity.1=1',
       model: 'xbox series x',
